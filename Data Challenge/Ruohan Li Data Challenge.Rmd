@@ -1,0 +1,38 @@
+---
+title: "USAA Real Estate Challenge Data Challenge"
+author: "Ruohan Li"
+date: "11/9/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Task 1 Property Lease-Up Summary
+
+```{r loaddata}
+library(openxlsx)
+msa1 = read.xlsx("./raw_data/leaseup/MSA1.xlsx", sheet = 4, startRow = 5)
+msa2 = read.xlsx("./raw_data/leaseup/MSA2.xlsx", sheet = 4, startRow = 4)
+
+```
+### 1. How many properties are delivered since April 2008 of these two markets?
+
+### 2. What is the average lease-up time for these two markets?
+
+### 3. Is there any interesting findings you would like to share with us?
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
